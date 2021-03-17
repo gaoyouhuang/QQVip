@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weight.mdstyle.followbehavior.FollowBehaviorActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:title="title"
+        app:subtitle="subtitle"
+        app:navigationIcon="@drawable/ic_launcher"
+        app:logo="@mipmap/refresh"
+        ></androidx.appcompat.widget.Toolbar>
+    <TextView
+        app:layout_behavior=".weight.mdstyle.followbehavior.FollowBehavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hahahahahahahahaa"></TextView>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="btn1"></Button>
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="btn2"></Button>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

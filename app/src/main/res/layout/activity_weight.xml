@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".weight.WeightActivity">
+
+    <com.example.myapplication.weight.DemoView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.example.myapplication.weight.DemoView>
+
+    <com.example.myapplication.weight.MagnifierView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.example.myapplication.weight.MagnifierView>
+
+    <com.example.myapplication.weight.LinearGradientView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="很快就会盛大的开你们变成v最新款坚持扩大收费"
+        android:textColor="#FF00FF"
+        android:textSize="20sp"></com.example.myapplication.weight.LinearGradientView>
+
+    <com.example.myapplication.weight.RadarView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"></com.example.myapplication.weight.RadarView>
+
+    <com.example.myapplication.weight.RadialView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"></com.example.myapplication.weight.RadialView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".weight.xformode.Main2Activity">
+    <com.example.myapplication.weight.xformode.LightView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.example.myapplication.weight.xformode.LightView>
+    <com.example.myapplication.weight.xformode.GuaGuaLeView
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"></com.example.myapplication.weight.xformode.GuaGuaLeView>
+    <com.example.myapplication.weight.xformode.EraserView
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"></com.example.myapplication.weight.xformode.EraserView>
+    <com.example.myapplication.weight.xformode.WareView
+        android:layout_width="150dp"
+        android:layout_height="150dp"></com.example.myapplication.weight.xformode.WareView>
+
+    <com.example.myapplication.weight.xformode.HeatbeatView
+        android:layout_width="150dp"
+        android:layout_height="150dp"></com.example.myapplication.weight.xformode.HeatbeatView>
+</LinearLayout>
