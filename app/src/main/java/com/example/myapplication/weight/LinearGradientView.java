@@ -53,6 +53,7 @@ public class LinearGradientView extends AppCompatTextView {
             paint.setShader(linearGradient);
         }
     }
+    Matrix matrix = new Matrix();
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -61,7 +62,6 @@ public class LinearGradientView extends AppCompatTextView {
         if (nowShowLength>sumLength-1){
             nowShowLength = 0;
         }
-        Matrix matrix = new Matrix();
         matrix.setTranslate(nowShowLength,0);
 //        canvas.setMatrix(matrix);
         linearGradient.setLocalMatrix(matrix);
