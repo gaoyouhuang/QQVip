@@ -9,6 +9,14 @@ public class Demo {
         System.out.println("2021/3/17 16:50 添加addMethod方法");
     }
     /**
+     * feature-mac
+     * addLogin
+     */
+    public void addLogin(){
+        System.out.println("2021/3/17 16:50 添加addMethod方法");
+    }
+      
+    /**
      * feature-sunyard-person
      * addPerson
      */
