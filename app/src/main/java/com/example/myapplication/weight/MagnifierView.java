@@ -57,7 +57,8 @@ public class MagnifierView extends View {
         mBitmapBack = BitmapFactory.decodeResource(getResources(), R.mipmap.book_bg);
         //放大的背景 去要通过运算从中获取
         mBitmapMagnifier = mBitmapBack;
-        mBitmapMagnifier = Bitmap.createScaledBitmap(mBitmapMagnifier, mBitmapBack.getWidth() * FACTOR, mBitmapBack.getHeight() * FACTOR, true);
+        mBitmapMagnifier = Bitmap.createScaledBitmap(mBitmapMagnifier, mBitmapBack.getWidth() * FACTOR,
+                mBitmapBack.getHeight() * FACTOR, true);
         //放大镜的矩阵
         Rect rect = new Rect(0, 0, RADIUS * 2, RADIUS * 2);
         BitmapShader bitmapShader = new BitmapShader(mBitmapMagnifier, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);

@@ -13,15 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".gitflow.weight.matrix.GitFlowMatrixActivity"
-            android:label="@string/title_activity_git_flow_matrix"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".gitflow.weight.xformade.GitFlowXforMadeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".gitflow.weight.matrix.GitFlowMatrixActivity"
+            android:label="@string/title_activity_git_flow_matrix"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity android:name=".BottomSheetActivity">
 
@@ -93,11 +100,13 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".weight.qqheader.md.QQHeaderMDActivity">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".weight.qqheader.QQHeaderActivity" />
         <activity
