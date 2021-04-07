@@ -10,7 +10,6 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Scroller;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,7 +31,6 @@ public class QQNestedScroll extends NestedScrollView {
         init();
     }
 
-    Scroller scroller;
     View header;
     ImageView imageView;
     LinearLayout root;
@@ -51,7 +49,6 @@ public class QQNestedScroll extends NestedScrollView {
         root.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         root.setOrientation(LinearLayout.VERTICAL);
         root.addView(header);
-        scroller = new Scroller(getContext());
     }
 
     @Override

@@ -18,6 +18,7 @@ import android.widget.Scroller;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.myapplication.R;
 
@@ -125,9 +126,10 @@ public class UpdateLinear extends LinearLayout {
                 float distanceX = ev.getX() - lastX;
                 float distanceY = ev.getY() - lastY;
                 //TODO 表示下拉 也就是会出现刷新的header
-                if (distanceY > 0 && (Math.abs(distanceY) > Math.abs(distanceX))) {
+                boolean b = Math.abs(distanceY) > Math.abs(distanceX);
+                if (distanceY > 0 && b) {
                     ret = true;
-                }else if (distanceY<=0&&(Math.abs(distanceY) > Math.abs(distanceX))){
+                }else if (distanceY<=0&& b){
                     ret = true;
                 }
                 Log.e(TAG, "UpdateLinear onInterceptTouchEvent ACTION_MOVE + distanceY " + distanceY);
@@ -225,6 +227,7 @@ public class UpdateLinear extends LinearLayout {
             scrollTo(scroller.getCurrX(), scroller.getCurrY());
             postInvalidate();
         }
+
     }
 
     public interface PersonAnimation {
